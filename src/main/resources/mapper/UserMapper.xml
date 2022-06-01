@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.ccsu.grade19.wu.cims.repository.UserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="edu.ccsu.grade19.wu.cims.domain.User">
+        <id column="id" property="id" />
+        <result column="account" property="account" />
+        <result column="password" property="password" />
+        <result column="add_permission" property="addPermission" />
+        <result column="delete_permission" property="deletePermission" />
+        <result column="modify_permission" property="modifyPermission" />
+        <result column="query_permission" property="queryPermission" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, 'account', 'password', add_permission, delete_permission, modify_permission, query_permission
+    </sql>
+
+</mapper>

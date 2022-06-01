@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.ccsu.grade19.wu.cims.repository.OutboundOrderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="edu.ccsu.grade19.wu.cims.domain.OutboundOrder">
+        <id column="id" property="id" />
+        <result column="odd_numbers" property="oddNumbers" />
+        <result column="user_id" property="userId" />
+        <result column="storehouse_id" property="storehouseId" />
+        <result column="date" property="date" />
+        <result column="amount" property="amount" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, odd_numbers, user_id, storehouse_id, 'date', amount
+    </sql>
+
+</mapper>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.ccsu.grade19.wu.cims.repository.ClothesMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="edu.ccsu.grade19.wu.cims.domain.Clothes">
+        <id column="id" property="id" />
+        <result column="article_no" property="articleNo" />
+        <result column="name" property="name" />
+        <result column="colority" property="colority" />
+        <result column="size" property="size" />
+        <result column="from" property="from" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, article_no, 'name', colority, size, 'from'
+    </sql>
+
+</mapper>
