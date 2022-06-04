@@ -1,6 +1,6 @@
 package edu.ccsu.grade19.wu.cims.service.impl;
 
-import edu.ccsu.grade19.wu.cims.domain.OutboundOrder;
+import edu.ccsu.grade19.wu.cims.domain.po.OutboundOrder;
 import edu.ccsu.grade19.wu.cims.repository.OutboundOrderMapper;
 import edu.ccsu.grade19.wu.cims.service.OutboundOrderService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

@@ -1,4 +1,4 @@
-package edu.ccsu.grade19.wu.cims.domain;
+package edu.ccsu.grade19.wu.cims.domain.po;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
@@ -18,7 +18,7 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class OutboundOrder extends Model<OutboundOrder> {
+public class WarehousingOrder extends Model<WarehousingOrder> {
 
     private static final long serialVersionUID = 1L;
 
@@ -29,7 +29,7 @@ public class OutboundOrder extends Model<OutboundOrder> {
     private Integer id;
 
     /**
-     * 出库单
+     * 入库单
      */
     private String oddNumbers;
 
@@ -44,7 +44,7 @@ public class OutboundOrder extends Model<OutboundOrder> {
     private Integer storehouseId;
 
     /**
-     * 出库日期
+     * 入库日期
      */
     private LocalDateTime date;
 

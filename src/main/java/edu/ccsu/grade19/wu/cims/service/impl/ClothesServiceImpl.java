@@ -1,6 +1,6 @@
 package edu.ccsu.grade19.wu.cims.service.impl;
 
-import edu.ccsu.grade19.wu.cims.domain.Clothes;
+import edu.ccsu.grade19.wu.cims.domain.po.Clothes;
 import edu.ccsu.grade19.wu.cims.repository.ClothesMapper;
 import edu.ccsu.grade19.wu.cims.service.ClothesService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

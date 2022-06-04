@@ -1,4 +1,4 @@
-package edu.ccsu.grade19.wu.cims.domain;
+package edu.ccsu.grade19.wu.cims.domain.po;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
@@ -17,7 +17,7 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class Clothes extends Model<Clothes> {
+public class User extends Model<User> {
 
     private static final long serialVersionUID = 1L;
 
@@ -28,29 +28,34 @@ public class Clothes extends Model<Clothes> {
     private Integer id;
 
     /**
-     * 货号
+     * 账号
      */
-    private String articleNo;
+    private String account;
 
     /**
-     * 货名
+     * 密码
      */
-    private String name;
+    private String password;
 
     /**
-     * 色号
+     * 增加权限
      */
-    private String colority;
+    private Boolean addPermission;
 
     /**
-     * 尺码
+     * 删除权限
      */
-    private Integer size;
+    private Boolean deletePermission;
 
     /**
-     * 来源
+     * 修改权限
      */
-    private String from;
+    private Boolean modifyPermission;
+
+    /**
+     * 查询权限
+     */
+    private Boolean queryPermission;
 
 
     @Override

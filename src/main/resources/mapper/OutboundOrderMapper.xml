@@ -3,7 +3,7 @@
 <mapper namespace="edu.ccsu.grade19.wu.cims.repository.OutboundOrderMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="edu.ccsu.grade19.wu.cims.domain.OutboundOrder">
+    <resultMap id="BaseResultMap" type="edu.ccsu.grade19.wu.cims.domain.po.OutboundOrder">
         <id column="id" property="id" />
         <result column="odd_numbers" property="oddNumbers" />
         <result column="user_id" property="userId" />

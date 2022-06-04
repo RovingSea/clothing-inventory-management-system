@@ -3,7 +3,7 @@
 <mapper namespace="edu.ccsu.grade19.wu.cims.repository.ClothesMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="edu.ccsu.grade19.wu.cims.domain.Clothes">
+    <resultMap id="BaseResultMap" type="edu.ccsu.grade19.wu.cims.domain.po.Clothes">
         <id column="id" property="id" />
         <result column="article_no" property="articleNo" />
         <result column="name" property="name" />

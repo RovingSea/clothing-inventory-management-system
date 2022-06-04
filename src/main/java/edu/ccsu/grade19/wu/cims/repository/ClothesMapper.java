@@ -1,6 +1,6 @@
 package edu.ccsu.grade19.wu.cims.repository;
 
-import edu.ccsu.grade19.wu.cims.domain.Clothes;
+import edu.ccsu.grade19.wu.cims.domain.po.Clothes;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

@@ -1,8 +1,9 @@
-package edu.ccsu.grade19.wu.cims.domain;
+package edu.ccsu.grade19.wu.cims.domain.po;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import com.baomidou.mybatisplus.annotation.TableId;
+import java.time.LocalDateTime;
 import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -17,7 +18,7 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class User extends Model<User> {
+public class OutboundOrder extends Model<OutboundOrder> {
 
     private static final long serialVersionUID = 1L;
 
@@ -28,34 +29,29 @@ public class User extends Model<User> {
     private Integer id;
 
     /**
-     * 账号
+     * 出库单
      */
-    private String account;
+    private String oddNumbers;
 
     /**
-     * 密码
+     * 用户id
      */
-    private String password;
+    private Integer userId;
 
     /**
-     * 增加权限
+     * 仓库id
      */
-    private Boolean addPermission;
+    private Integer storehouseId;
 
     /**
-     * 删除权限
+     * 出库日期
      */
-    private Boolean deletePermission;
+    private LocalDateTime date;
 
     /**
-     * 修改权限
+     * 数量
      */
-    private Boolean modifyPermission;
-
-    /**
-     * 查询权限
-     */
-    private Boolean queryPermission;
+    private Integer amount;
 
 
     @Override

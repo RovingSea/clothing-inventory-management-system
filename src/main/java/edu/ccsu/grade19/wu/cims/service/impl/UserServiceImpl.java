@@ -1,6 +1,6 @@
 package edu.ccsu.grade19.wu.cims.service.impl;
 
-import edu.ccsu.grade19.wu.cims.domain.User;
+import edu.ccsu.grade19.wu.cims.domain.po.User;
 import edu.ccsu.grade19.wu.cims.repository.UserMapper;
 import edu.ccsu.grade19.wu.cims.service.UserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

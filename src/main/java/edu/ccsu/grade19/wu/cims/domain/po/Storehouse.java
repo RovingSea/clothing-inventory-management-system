@@ -1,4 +1,4 @@
-package edu.ccsu.grade19.wu.cims.domain;
+package edu.ccsu.grade19.wu.cims.domain.po;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;

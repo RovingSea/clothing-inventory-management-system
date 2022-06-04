@@ -1,4 +1,4 @@
-package edu.ccsu.grade19.wu.cims.domain;
+package edu.ccsu.grade19.wu.cims.domain.po;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
@@ -17,7 +17,7 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class Storage extends Model<Storage> {
+public class Clothes extends Model<Clothes> {
 
     private static final long serialVersionUID = 1L;
 
@@ -28,19 +28,29 @@ public class Storage extends Model<Storage> {
     private Integer id;
 
     /**
-     * 货物id
+     * 货号
      */
-    private Integer clotesId;
+    private String articleNo;
 
     /**
-     * 仓库id
+     * 货名
      */
-    private Integer storehouseId;
+    private String name;
 
     /**
-     * 总数
+     * 色号
      */
-    private Integer total;
+    private String colority;
+
+    /**
+     * 尺码
+     */
+    private Integer size;
+
+    /**
+     * 来源
+     */
+    private String from;
 
 
     @Override

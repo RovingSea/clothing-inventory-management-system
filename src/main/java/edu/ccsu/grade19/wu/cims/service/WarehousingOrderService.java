@@ -1,6 +1,6 @@
 package edu.ccsu.grade19.wu.cims.service;
 
-import edu.ccsu.grade19.wu.cims.domain.WarehousingOrder;
+import edu.ccsu.grade19.wu.cims.domain.po.WarehousingOrder;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

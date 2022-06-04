@@ -1,6 +1,6 @@
 package edu.ccsu.grade19.wu.cims.service.impl;
 
-import edu.ccsu.grade19.wu.cims.domain.WarehousingOrder;
+import edu.ccsu.grade19.wu.cims.domain.po.WarehousingOrder;
 import edu.ccsu.grade19.wu.cims.repository.WarehousingOrderMapper;
 import edu.ccsu.grade19.wu.cims.service.WarehousingOrderService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

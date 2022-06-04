@@ -1,9 +1,8 @@
-package edu.ccsu.grade19.wu.cims.domain;
+package edu.ccsu.grade19.wu.cims.domain.po;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import com.baomidou.mybatisplus.annotation.TableId;
-import java.time.LocalDateTime;
 import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -18,7 +17,7 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class WarehousingOrder extends Model<WarehousingOrder> {
+public class Storage extends Model<Storage> {
 
     private static final long serialVersionUID = 1L;
 
@@ -29,14 +28,9 @@ public class WarehousingOrder extends Model<WarehousingOrder> {
     private Integer id;
 
     /**
-     * 入库单
+     * 货物id
      */
-    private String oddNumbers;
-
-    /**
-     * 用户id
-     */
-    private Integer userId;
+    private Integer clotesId;
 
     /**
      * 仓库id
@@ -44,14 +38,9 @@ public class WarehousingOrder extends Model<WarehousingOrder> {
     private Integer storehouseId;
 
     /**
-     * 入库日期
+     * 总数
      */
-    private LocalDateTime date;
-
-    /**
-     * 数量
-     */
-    private Integer amount;
+    private Integer total;
 
 
     @Override

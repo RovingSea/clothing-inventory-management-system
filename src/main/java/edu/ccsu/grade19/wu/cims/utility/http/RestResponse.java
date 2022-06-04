@@ -15,6 +15,11 @@ public class RestResponse<T> implements Serializable {
     private String msg;
     private T response;
 
+    public RestResponse(SystemCode systemCode) {
+        this.code = systemCode.code;
+        this.msg = systemCode.message;
+    }
+
     public RestResponse(int code, String message) {
         this.code = code;
         this.msg = message;
@@ -26,19 +31,17 @@ public class RestResponse<T> implements Serializable {
         this.response = response;
     }
 
-    public static RestResponse ok() {
-        SystemCode systemCode = SystemCode.OK;
-        return new RestResponse(systemCode.getCode(), systemCode.getMessage());
-    }
-
-    public static RestResponse failure() {
-        SystemCode systemCode = SystemCode.Failure;
-        return new RestResponse<>(systemCode.getCode(), systemCode.getMessage());
+    public static <F> RestResponse<F> ok() {
+        return ok(null);
     }
 
     public static <F> RestResponse<F> ok(F response) {
         SystemCode systemCode = SystemCode.OK;
         return new RestResponse<>(systemCode.getCode(), systemCode.getMessage(), response);
+    }
+
+    public static <F> RestResponse<F> failure() {
+        return failure(null);
     }
 
     public static <F> RestResponse<F> failure(F response) {

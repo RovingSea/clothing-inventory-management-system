@@ -3,7 +3,7 @@
 <mapper namespace="edu.ccsu.grade19.wu.cims.repository.StorehouseMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="edu.ccsu.grade19.wu.cims.domain.Storehouse">
+    <resultMap id="BaseResultMap" type="edu.ccsu.grade19.wu.cims.domain.po.Storehouse">
         <id column="id" property="id" />
         <result column="name" property="name" />
     </resultMap>

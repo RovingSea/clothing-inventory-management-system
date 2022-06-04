@@ -1,6 +1,6 @@
 package edu.ccsu.grade19.wu.cims.repository;
 
-import edu.ccsu.grade19.wu.cims.domain.Storehouse;
+import edu.ccsu.grade19.wu.cims.domain.po.Storehouse;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

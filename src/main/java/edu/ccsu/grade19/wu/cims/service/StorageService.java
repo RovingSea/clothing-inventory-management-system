@@ -1,6 +1,6 @@
 package edu.ccsu.grade19.wu.cims.service;
 
-import edu.ccsu.grade19.wu.cims.domain.Storage;
+import edu.ccsu.grade19.wu.cims.domain.po.Storage;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

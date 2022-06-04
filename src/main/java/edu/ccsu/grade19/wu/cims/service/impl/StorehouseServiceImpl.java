@@ -1,6 +1,6 @@
 package edu.ccsu.grade19.wu.cims.service.impl;
 
-import edu.ccsu.grade19.wu.cims.domain.Storehouse;
+import edu.ccsu.grade19.wu.cims.domain.po.Storehouse;
 import edu.ccsu.grade19.wu.cims.repository.StorehouseMapper;
 import edu.ccsu.grade19.wu.cims.service.StorehouseService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
